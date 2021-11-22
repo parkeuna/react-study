@@ -1,0 +1,13 @@
+nodejs.org/ko/
+16.13.0 버전 설치
+
+node버전 확인은 cmd 명령프롬프트로 확인
+
+● npm 사용시
+vscode 터미널 열고 cmd 환경에서 설치하기
+▶설치 : npm i -g create-react-app (딱한번만깔기)
+▶언인스톨 : npm uninstall -g create-react-app
+▶확인 : create-react-app -V (v대문자) 
+▶개발환경설치 : 해당폴더로 이동후 create-react-app .
+
+https://github.com/parkeuna/react-study.git
