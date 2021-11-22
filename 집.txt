@@ -11,3 +11,5 @@ vscode 터미널 열고 cmd 환경에서 설치하기
 ▶개발환경설치 : 해당폴더로 이동후 create-react-app .
 
 https://github.com/parkeuna/react-study.git
+
+jsx문법 -> barbel 라이브러리 -> 웹팩
