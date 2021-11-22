@@ -2,7 +2,7 @@ const App = () => {
   return (
     <>
       App Template
-      <div className="box"></div>
+    
     </>
   );
 }
