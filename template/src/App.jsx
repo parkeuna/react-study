@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 
 const App = () => {
-  let [_name, _setName] = useState('홍길동') // let name = "홍길동"
-
-  let fn = (e) => {
-    _setName(e.target.innerText)
+  const [_num, _setNum] = useState(1)
+  const fn = () => {
+    _setNum(_num + 1)
   }
   return (
     <>
-      <p>안녕하세요. {_name}입니다.</p>
-      <button onClick={fn}>홍길동</button>
-      <button onClick={fn}>아무개</button>
+      <p>{_num}</p>
+      <button onClick={fn}>1씩 증가</button>
     </>
   );
 };
