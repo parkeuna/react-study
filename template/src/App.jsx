@@ -1,23 +1,18 @@
 import React, { useState } from 'react';
+import CompInput from './components/CompInput';
 import CompOutput from './components/CompOutput';
 
 const App = () => {
-  const [_n, _setN] = useState(1)
-  let n
-  
-  const fn = (e) => {
-    n = _n
-    let increase = parseInt(e.target.getAttribute('data-increase'))
-    _setN(n + increase)
+  const fnRanNum = () => {
+    return Math.floor(Math.random() * 10)
   }
+  const [_num, _setNum] = useState(fnRanNum())
+  
   return (
     <>
-      <p>버튼을 클릭하면 증감 연산이 됩니다</p>
-      <hr />
-      <CompOutput prop_n={_n}/>
-      <hr />
-      <button data-increase="-1" onClick={fn}>1 감소</button>
-      <button data-increase="1" onClick={fn}>1 증가</button>
+      <p>제시된 숫자를 더하기로 완성하세요</p>
+      <CompOutput _num = {_num} />
+      <CompInput _num = {_num} />
     </>
   );
 };
