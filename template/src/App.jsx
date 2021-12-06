@@ -1,18 +1,15 @@
 import React, { useState } from 'react';
-import CompInput from './components/CompInput';
-import CompOutput from './components/CompOutput';
+import Comp1 from './components/Comp1';
+import Comp2 from './components/Comp2';
 
 const App = () => {
-  const fnRanNum = () => {
-    return Math.floor(Math.random() * 10)
-  }
-  const [_num, _setNum] = useState(fnRanNum())
-  
+  const [_init, _setInit] = useState('comp1')
+  const [_num, _setNum] = useState(null)
   return (
     <>
-      <p>제시된 숫자를 더하기로 완성하세요</p>
-      <CompOutput _num = {_num} />
-      <CompInput _num = {_num} />
+      {
+        (_init === 'comp1') ?  <Comp1 _num = {_num} _setNum = {_setNum} /> : <Comp2 />
+      }
     </>
   );
 };
