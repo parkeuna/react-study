@@ -8,7 +8,11 @@ const App = () => {
   return (
     <>
       {
-        (_init === 'comp1') ?  <Comp1 _num = {_num} _setNum = {_setNum} /> : <Comp2 />
+        (_init === 'comp1')
+        ?
+        <Comp1 _num = {_num} _setNum = {_setNum} _setInit={_setInit} />
+        :
+        <Comp2 _num = {_num} _setInit={_setInit} />
       }
     </>
   );

@@ -30,4 +30,24 @@
         (!_num) && <button onClick={fnShowNum}>숫자 생성</button>
       }
 
-★ useState
+★ useEffect (생명주기)
+  - 컴포넌트가 브라우저 화면에 출력됨(mount), 스테이트가 변할때(update), 화면에서 제거 (unmount)
+  - 컴퍼넌트가 마운트 되었을 때, 업데이트(state변수가 변경) 될 때마다 메시지 출력하기
+    - 예시
+        useEffect (()=>{
+          console.log('comp1 마운트 되었습니다');
+        })
+  - 컴퍼넌트가 마운트 되었을 때만 메시지 출력 (deps array를 사용)
+    - 예시
+      useEffect (()=>{
+        console.log('comp1 마운트 되었습니다');
+      },[])
+  - 컴퍼넌트가 언마운트 되었을 때 메시지 출력 (return의 콜백함수를 사용)
+    - 예시
+      useEffect(() => {
+        console.log('comp1 마운트 되었습니다');
+        document.querySelector('.comp1').classList.add('active')
+        return (()=>{
+          console.log('comp1 언마운트 되었습니다');
+        })
+      },[])
