@@ -1,10 +1,28 @@
+html, body {
+  height: 100%;
+}
+
+.content_width {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 body {
-  background-color: #eee;
+  font-family: "Raleway", "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  color: #666;
 }
-.comp1, .comp2 {
-  opacity: 0;
-  transition: opacity 2s;
+
+@media screen and (min-width: 800px) {
+  .padding_v {
+    padding: 70px 0;
+  }
 }
-.comp1.active, .comp2.active {
-  opacity: 1;
+
+@media screen and (max-width: 800px) {
+  .padding_v {
+    padding: 40px 0;
+  }
 }
