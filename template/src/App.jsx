@@ -1,13 +1,14 @@
+import { useState } from "react";
 import CompBtnContainer from "./components/CompBtnContainer";
 import CompOutput from "./components/CompOutput";
-import { btnArr } from "./module/data";
 
 const App = () => {
+  const [_result, _setResult] = useState('')
   return (
     <>
       <main>
-        <CompOutput />
-        <CompBtnContainer />
+        <CompOutput _result={_result} />
+        <CompBtnContainer _setResult={_setResult} />
       </main>
     </>
   );

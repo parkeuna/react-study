@@ -1,9 +1,9 @@
 import React from 'react';
 
-const CompOutput = () => {
+const CompOutput = (props) => {
   return (
     <div className="output">
-      
+      {props._result}
     </div>
   );
 };

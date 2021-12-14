@@ -1,14 +1,17 @@
 import { btnArr } from "../module/data";
+import CompBtn from "./CompBtn";
 
-const CompBtnContainer = () => {
+const CompBtnContainer = ({ _setResult }) => {
   return (
     <form className='btnContainer'>
       {
-        btnArr.map((v) => {
+        btnArr.map((btnDataObj) => {
           return (
-            <button key={v.id} className={`${v.fn} ${v.id}`}>
-              {v.char}
-            </button>
+            <CompBtn
+              key={btnDataObj.id}
+              btnDataObj={btnDataObj}
+              _setResult={_setResult}
+            />
           )
         })
       }
