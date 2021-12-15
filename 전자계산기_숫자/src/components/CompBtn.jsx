@@ -11,10 +11,11 @@ const CompBtn = ({ btnDataObj, _setResult }) => {
   return (
     <button
       onClick={fnChangeResult}
+      className={btnDataObj.fn}
       data-fn={btnDataObj.fn}
       data-char={btnDataObj.id}
     >
-      <img src={`./img/${btnDataObj.src}.png`} alt="" />
+      {btnDataObj.char}
     </button>
   );
 };

@@ -1,8 +1,6 @@
-let str = ''
-
 export const fnSetResult = (e) => {
   let fn = e.currentTarget.getAttribute('data-fn')
-  
+  let str = document.querySelector('.output').innerText
   switch (fn) {
     case 'change':
       let char = e.currentTarget.getAttribute('data-char')
@@ -15,9 +13,9 @@ export const fnSetResult = (e) => {
       str = ''
       return str
     case 'calc':
-      try {
+      try {//에러가 없을때 실행
         let fnCalc = new Function('return ' + str)
-        str = String(fnCalc()) //2
+        str = fnCalc()//2
         return str
       } catch {//에러가 발생하면 실행
         alert('계산식오류')

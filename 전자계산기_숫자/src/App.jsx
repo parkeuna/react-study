@@ -7,7 +7,6 @@ const App = () => {
   return (
     <>
       <main>
-        <h1><img src="./img/title.png" alt="" /></h1>
         <CompOutput _result={_result} />
         <CompBtnContainer _setResult={_setResult} />
       </main>

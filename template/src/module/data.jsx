@@ -1,102 +1,22 @@
 export const btnArr = [
-  {
-    id: 'clear',
-    char:<i className="fab fa-cuttlefish"></i>, // clear
-    fn:'clear',
-  },
-  {
-    id: '(',
-    char:'(',
-    fn:'change',
-  },
-  {
-    id: ')',
-    char:')',
-    fn:'change',
-  },
-  {
-    id: '/',
-    char:<i className="fas fa-divide"></i>, // divide
-    fn:'change',
-  },
-  {
-    id: '7',
-    char:'7',
-    fn:'change',
-  },
-  {
-    id: '8',
-    char:'8',
-    fn:'change',
-  },
-  {
-    id: '9',
-    char:'9',
-    fn:'change',
-  },
-  {
-    id: '*',
-    char:<i className="fas fa-times"></i>, // *
-    fn:'change',
-  },
-  {
-    id: '4',
-    char:'4',
-    fn:'change',
-  },
-  {
-    id: '5',
-    char:'5',
-    fn:'change',
-  },
-  {
-    id: '6',
-    char:'6',
-    fn:'change',
-  },
-  {
-    id: '-',
-    char:<i className="fas fa-minus"></i>, // -
-    fn:'change',
-  },
-  {
-    id: '1',
-    char:'1',
-    fn:'change',
-  },
-  {
-    id: '2',
-    char:'2',
-    fn:'change',
-  },
-  {
-    id: '3',
-    char:'3',
-    fn:'change',
-  },
-  {
-    id: '+',
-    char:<i className="fas fa-plus"></i>, // +
-    fn:'change',
-  },
-  {
-    id: 'del',
-    char:<i className="fas fa-backspace"></i>, // <-
-    fn:'delete',
-  },
-  {
-    id: '0',
-    char:'0',
-    fn:'change',
-  },
-  {
-    id: '.',
-    char:<i className="fas fa-circle"></i>,
-    fn:'change',
-  },
-  {
-    id: 'calc',
-    char:<i className="fas fa-equals"></i>, // =
-    fn:'calc',
-  },
+  {src: 'clear',id: 'clear',fn:'clear',},
+  {src: 'blank_l',id: '(',fn:'change',},
+  {src: 'blank_r',id: ')',fn:'change',},
+  {src: 'divide',id: '/',fn:'change',},
+  {src: '7',id: '7',fn:'change',},
+  {src: '8',id: '8',fn:'change',},
+  {src: '9',id: '9',fn:'change',},
+  {src: 'multi',id: '*',fn:'change',},
+  {src: '4',id: '4',fn:'change',},
+  {src: '5',id: '5',fn:'change',},
+  {src: '6',id: '6',fn:'change',},
+  {src: 'minus',id: '-',fn:'change',},
+  {src: '1',id: '1',fn:'change',},
+  {src: '2',id: '2',fn:'change',},
+  {src: '3',id: '3',fn:'change',},
+  {src: 'plus',id: '+',fn:'change',},
+  {src: 'del',id: 'del',fn:'delete',},
+  {src: '0',id: '0',fn:'change',},
+  {src: 'dot',id: '.',fn:'change',},
+  {src: 'equal',id: 'calc',fn:'calc',},
 ]
