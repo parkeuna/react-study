@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import CompTimer from './CompTimer';
 
 const ListComp = ({ ddayObj, _ddayArr, _setddayArr }) => {
+  
   const fnDelList = () => {
     // 배열에서 클릭한 정보에 해당하는 객체값을 제거
     // _ddayArr 배열의 해당 li의 아이디와 동일하지 않은 객체들 남기기
@@ -23,7 +25,7 @@ const ListComp = ({ ddayObj, _ddayArr, _setddayArr }) => {
         <span>{ddayObj.month}월 </span>
         <span>{ddayObj.date}일</span>
       </time>
-      <p>n일 n분 n초 남았습니다</p>
+      <CompTimer ddayObj={ddayObj} />
       <button onClick={fnDelList}>삭제</button>
     </li>
   );

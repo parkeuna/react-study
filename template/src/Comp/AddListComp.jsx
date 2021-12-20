@@ -5,6 +5,11 @@ const AddListComp = ({_ddayArr, _setddayArr}) => {
   const navi = useNavigate()
   const refDdayName = useRef()
   const refDdayDate = useRef()
+  
+  const fnCancel = (e) => {
+    e.preventDefault()
+    navi('/') // 목록 페이지로 이동
+  }
 
   const fnAddDday = (e) => {
     e.preventDefault()
@@ -60,6 +65,8 @@ const AddListComp = ({_ddayArr, _setddayArr}) => {
         </p>
         <p>
           <button onClick={fnAddDday}>추가하기</button>
+          &nbsp;
+          <button onClick={fnCancel}>취소하기</button>
         </p>
       </form>
     </main>
